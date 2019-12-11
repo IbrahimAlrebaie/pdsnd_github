@@ -1,11 +1,12 @@
 ### Date created
-Include the date you created this project and README file.
+
 
 ### Project Title
 Replace the Project Title
 
 ### Description
-Describe what your project is about and what it does
+the project analysis Bikeahare data for 3 cities (New york, Washington, and Chicago)
+the project will ask the user to choose a city first, then decide if would like to filter data or not.
 
 ### Files used
 Include the files used
