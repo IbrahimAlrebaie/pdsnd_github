@@ -6,6 +6,10 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
+MONTHS = ['all','january', 'february', 'march', 'april', 'may', 'june']  
+
+DAYS = ['all' ,'monday' ,'tusday' ,'wednesday' ,'thursday' ,'friday' ,'saturday' ,'sunday']
+
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
@@ -18,18 +22,18 @@ def get_filters():
     print('Hello! Let\'s explore some US bikeshare data!')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     city = input('Enter the city name:').lower()
-    while city not in ('chicago, new york city  washington'):
+    while city not in CITY_DATA : 
         city = input('The city name is invalid! Please put another name:').lower()
 
 
     # TO DO: get user input for month (all, january, february, ... , june)
     month = input('Please input the month name you want:').lower()
-    while month not in ('all, january, february, march, april, may, june, july, august, september, october, november, december'):
+    while month not in MONTHS:
         month = input('The month name is invalid! please put another name:').lower()
 
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     day = input('Please input the day of the week you want:').lower()
-    while day not in ('all,monday,tusday,wednesday,thursday,friday,saturday,sunday'):
+    while day not in DAYS:
         day = input('The day name is invalid! please put another                         name:').lower()
 
     print('-'*40)
