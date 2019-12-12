@@ -6,6 +6,8 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
+MONTHS = ['all','january', 'february', 'march', 'april', 'may', 'june']              
+
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
@@ -24,7 +26,7 @@ def get_filters():
 
     # TO DO: get user input for month (all, january, february, ... , june)
     month = input('Please input the month name you want:').lower()
-    while month not in ('all, january, february, march, april, may, june, july, august, september, october, november, december'):
+    while month not in MONTHS:
         month = input('The month name is invalid! please put another name:').lower()
 
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
